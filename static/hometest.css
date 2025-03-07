@@ -1,0 +1,16 @@
+#__next > div > div > div:nth-child(2) > div
+{
+    background-color: #f5f5f5;
+    /* background-image: url("https://www.transparenttextures.com/patterns/axiom-pattern.png"); */
+    background-size: 100%;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-origin: inherit;
+ background-origin: inherit;
+
+}
+#__next > div > div > div:nth-child(2) > div > div.ui.large.inverted.pointing.secondary.menu
+{
+    border-width: 0mm;
+}

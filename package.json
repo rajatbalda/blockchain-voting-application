@@ -1,36 +1,41 @@
 {
-  "name": "blockchain-voting-application",
-  "version": "0.1.0",
-  "private": true,
+  "name": "GradBVA",
+  "version": "1.0.0",
+  "main": "server.js",
   "dependencies": {
-    "cra-template": "1.2.0",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "react-scripts": "^5.0.1",
-    "web-vitals": "^4.2.4"
+    "@zeit/next-css": "^1.0.1",
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^1.18.3",
+    "chart.js": "^2.8.0",
+    "chartjs": "^0.3.24",
+    "chartjs-plugin-annotation": "^0.5.7",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "ganache-cli": "^6.4.1",
+    "ipfs-api": "^26.1.2",
+    "js-cookie": "^2.2.0",
+    "mongoose": "^8.12.1",
+    "next": "^8.0.3",
+    "next-routes": "^1.4.2",
+    "nodemailer": "^6.1.0",
+    "path": "^0.12.7",
+    "react": "^16.8.5",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.5",
+    "react-helmet": "^5.2.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.86.0",
+    "solc": "^0.4.25",
+    "truffle-hdwallet-provider": "^1.0.5",
+    "web3": "^1.0.0-beta.52"
+  },
+  "devDependencies": {
+    "mocha": "^6.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "test": "mocha",
+    "start": "set NODE_OPTIONS=--openssl-legacy-provider node server.js",
+    "dev": "set NODE_OPTIONS=--openssl-legacy-provider && next dev"
   }
 }
